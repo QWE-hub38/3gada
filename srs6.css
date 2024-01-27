@@ -1,0 +1,359 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family:'pixel anchor jack' ;
+	scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(to bottom left, rgb(0, 0, 0), rgb(18, 52, 83));
+    background-attachment: fixed
+}
+/*-------------------------transition-----------------------------------------*/
+.transition{
+	width: 100%;
+	height: 50px;
+	background: linear-gradient(rgb(0, 0, 0), rgba(18, 52, 83, 0));
+}
+#transition2{
+position: absolute;
+background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0));
+top:652px;
+}
+/*-------------------------transition-----------------------------------------*/
+.Champoins{
+background-color: black;
+width: 100%;
+height: 400px;
+display: flex;
+justify-content: center;
+}
+.CharacterOpasity:hover{
+	background-color: rgba(0, 0, 0, 0);
+	transform: scale(1.2);
+}
+.CharacterOpasity{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.534);
+}
+.Character{
+	display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+	width: 350px;
+	height: 100%;
+	margin: 10px;
+	transition: all 1s;
+	border-radius: 50px;
+}
+#Nikita{
+	position: relative;
+   text-align: center;
+   cursor: pointer;
+   margin-bottom: 20px;
+   background-position: center;
+   background-size: cover;
+   overflow: hidden;
+	background-image: url(Photo/ya-transformed.png);
+}
+#OLEG{
+	position: relative;
+   text-align: center;
+   cursor: pointer;
+   margin-bottom: 20px;
+   background-position: center;
+   background-size: cover;
+   overflow: hidden;
+	background-image: url(Photo/Oleg.png);
+}
+#AKKERMAN{
+	position: relative;
+   text-align: center;
+   cursor: pointer;
+   margin-bottom: 20px;
+   background-position: center;
+   background-size: cover;
+   overflow: hidden;
+	background-image: url(Photo/AKKERMAN.png);
+}
+/*-----------------------------3GADAlogo----------------------------------------*/
+.GADAlogo{
+width: 100%;
+height: 700px;
+background-color: black;
+z-index: 4;
+
+}
+#q{
+	width: 100%;
+	height: 700px;
+	z-index: 4;
+  }
+#team3gada{
+	background-color: black;
+    color: #fff;
+    font-size: 100px;
+	position: absolute;
+float: left;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+/*--------------------РЕКЛАМНЫЕ-БАНЕРА---------------------------*/
+.ADD{
+    position: relative;
+    height: 900px;
+    width: 100%;
+	display: inline-block;
+}
+.ADD .advers1 .advers2{
+    height: 800px;
+    width: 100%;
+}
+.Information_About{
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    height: 700px;
+}
+.Information_About .text{
+    color: #fff;
+    width: 60%;
+    position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Rjcnby{
+    display: inline-block;
+    width: 650px;
+    height: 700px;
+    background-image: url(Photo/ya-transformed.png);
+}
+.Xehyj{
+    position: relative;
+    left: 50%;
+    width: 650px;
+    height: 700px;
+    background-image: url(Photo/Oleg.png);
+}
+.Akk{
+	display: inline-block;
+	position: relative;
+    width: 650px;
+    height: 700px;
+	background-position: center;
+   background-size: cover;
+    background-image: url(Photo/AKKERMAN.png);
+}
+.social{
+    position: absolute;
+  top: 35%;
+  left: 40%;
+}
+.were{
+	position: relative;
+	width: 100%;
+	height: 200px;
+}
+/*------------------------------------------ГРАФИК-------------------------------------------------------------*/
+.section {
+	position: absolute;
+	left: 50%;
+	top: 80%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 50%;
+}
+
+.skills {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.diagram {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+
+.skillBLock {
+	height: 200px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+}
+
+.column {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+}
+/*----------------------------------------------------------NIKITA-----------------------------------------------------------------------*/
+.skillBLock:first-child .column {
+	background: #f2870c;
+	height: calc(200px / 100 * 50);
+	animation: appFir 4s 1;
+}
+.skillBLock:nth-child(2) .column {
+	background: #0cbcf2;
+	height: calc(200px / 100 * 30); 
+	animation: appSec 4s 1;
+}
+.skillBLock:nth-child(3) .column {
+	background: #f2db0c;
+	height: calc(200px / 100 * 20); 
+	animation: appThi 4s 1;
+}
+
+.skillBLock:last-child .column {
+	background: #b10cf2;
+	height: calc(200px / 100 * 10); 
+	animation: appFou 4s 1;
+}
+.column span {
+	color: #fff;
+	font-size: 20px;
+	animation: app 5s 1;
+}
+/*--------------------------------------------------------OLEG------------------------------------------------------------------------*/
+.advers2 .skillBLock:first-child .column {
+	background: #f2870c;
+	height: calc(200px / 100 * 35);
+	animation: appFirOLEG 4s 1;
+}
+.advers2 .skillBLock:nth-child(2) .column {
+	background: #0cbcf2;
+	height: calc(200px / 100 * 25); 
+	animation: appSecOLEG 4s 1;
+}
+.advers2 .skillBLock:nth-child(3) .column {
+	background: #f2db0c;
+	height: calc(200px / 100 * 10); 
+	animation: appThiOLEG 4s 1;
+}
+
+.advers2 .skillBLock:last-child .column {
+	background: #b10cf2;
+	height: calc(200px / 100 * 10); 
+	animation: appFou 4s 1;
+}
+.advers2 .column span {
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	animation: app 5s 1;
+}
+.name {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 20px;
+}
+/*--------------------------------------------------ВСЕ @ ТУТ------------------------------------------------------------------*/
+@keyframes appFir {
+	0% {
+		height: 0;
+	}
+	20% {
+		height: 0;
+	}
+	100% {
+		height: calc(200px / 100 * 50);
+	}
+}
+@keyframes appFirOLEG {
+	0% {
+		height: 0;
+	}
+	20% {
+		height: 0;
+	}
+	100% {
+		height: calc(200px / 100 * 35);
+	}
+}
+@keyframes appSec {
+	0% {
+		height: 0;
+	}
+	20% {
+		height: 0;
+	}
+	100% {
+		height: calc(200px / 100 * 30);
+	}
+}
+@keyframes appSecOLEG {
+	0% {
+		height: 0;
+	}
+	20% {
+		height: 0;
+	}
+	100% {
+		height: calc(200px / 100 * 25);
+	}
+}
+@keyframes appThi {
+	0% {
+		height: 0;
+	}
+	20% {
+		height: 0;
+	}
+	100% {
+		height: calc(200px / 100 * 20);
+	}
+}
+
+@keyframes appThiOLEG {
+	0% {
+		height: 0;
+	}
+	20% {
+		height: 0;
+	}
+	100% {
+		height: calc(200px / 100 * 10);
+	}
+}
+
+@keyframes appFou {
+	0% {
+		height: 0;
+	}
+	20% {
+		height: 0;
+	}
+	100% {
+		height: calc(200px / 100 * 10);
+	}
+}
+@keyframes app {
+	0% {
+		opacity: 0;
+	}
+	70% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@font-face {
+	font-family: 'pixel anchor jack';
+	src: url(fonts/pixel-anchor-jack_0.ttf);
+}
